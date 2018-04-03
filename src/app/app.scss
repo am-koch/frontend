@@ -51,9 +51,10 @@
 h1 {
     color: color($colors, dark);
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 50px;
+    font-size: 60px;
     text-transform: uppercase;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 h2 {
@@ -67,6 +68,11 @@ h2 {
 .big-h2 {
     font-size: 45px;
 }
+
+.alert-md .alert-title {
+    text-align: center;
+}
+
 
 // BUTTON
 

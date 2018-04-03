@@ -1,15 +1,17 @@
 page-home {
-
+    .scroll-content {
+        background: color($colors, secondary);
+    }
     .home-landing {
         min-height: 800px;
-        background: url('../assets/retimed_04.png');
+        background: linear-gradient(rgba(219,33,64,.0), rgba(219,33,64,1)),url('../assets/retimed_04.png');
         background-position: center;
     }
 
     .content-video {
         display: flex;
         justify-content: center;
-        margin-top: -135px;
+        margin-top: -80px;
     }
 
     .cta-video {
@@ -23,6 +25,67 @@ page-home {
             height: auto;
             width: 95%;
             max-height: 400px;
+        }
+    }
+
+    .big-txt {
+        color: white;
+        line-height: 40px;
+    }
+    .red-txt {
+        background: white;
+        transform: skew(-20deg);
+        text-align: center;
+    }
+
+    .container-cta {
+
+        .sun-burst {
+            opacity: 0.7;
+            animation:bursting 15s linear infinite;
+        }
+        .cta {
+            position: relative;
+            top: -145px;
+            margin-top: 0px;
+            animation: bump 2s ease-in-out infinite;
+        }
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .games-league {
+        width: 600px;
+        margin-bottom: 30px;
+    }
+
+
+    @keyframes bursting {
+        0%   { 
+            transform: rotate(0deg)
+            scale(0.8,0.8);
+        }
+        50% {
+            transform: rotate(180deg)
+            scale(1.1,1.1);
+        }
+        100% { 
+            transform: rotate(360deg) 
+            scale(0.8,0.8);
+        }
+    }
+
+    @keyframes bump {
+        0%   { 
+            transform: scale(1,1);
+        }
+        50% {
+            transform: scale(1.1,1.1);
+        }
+        100% { 
+            transform: scale(1,1);
         }
     }
 
