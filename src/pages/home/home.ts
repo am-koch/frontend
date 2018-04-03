@@ -21,7 +21,7 @@ export class HomePage {
   openPopup() {
       let alert = this.alertCtrl.create({
       title: 'SOON!',
-      message: 'Sign up will be soon available! Stay tuned to don\'t miss it!',
+      message: 'Sign-ups will soon be available! Stay tuned and don\'t miss it!',
       buttons: [
         {
           text: 'Can\'t wait!',
