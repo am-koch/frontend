@@ -1,0 +1,18 @@
+<div class="container-sponsor">
+  <img src="assets/sponsors.png" alt="Logo of sponsors Bity, pro helvetia and swiss esports federation" class="sponsors-logo" />
+</div>
+
+<nav id="mobile-menu">
+  <div>
+    <img (click)="toHome()" src="assets/smgl_logo-ladder.svg" alt="Logo SMGL" class="logo mobile-logo" />
+  </div>
+  <div id="button-mobile-menu" (click)="openMenu()">
+    <div id="burger-menu"></div>
+  </div>
+  <div class="nav-link-container">
+    <div class="close-menu" (click)="animateCloseLink()"></div>
+    <p class="primary-link delayed-two" (click)="toAbout()">More about us</p>
+    <p class="primary-link delayed-two" (click)="toCompetition()">The competition</p>
+    <p class="primary-link delayed-three" (click)="toSwissGames()">Swiss Games</p>
+  </div>
+</nav>

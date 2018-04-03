@@ -1,3 +1,29 @@
 page-home {
 
+    .home-landing {
+        min-height: 800px;
+        background: url('../assets/retimed_04.png');
+        background-position: center;
+    }
+
+    .content-video {
+        display: flex;
+        justify-content: center;
+        margin-top: -135px;
+    }
+
+    .cta-video {
+        height: 400px;
+        width: 80%;
+        max-width: 960px;
+    }
+
+    @media screen and (max-width: 712px) {
+        .cta-video {
+            height: auto;
+            width: 95%;
+            max-height: 400px;
+        }
+    }
+
 }

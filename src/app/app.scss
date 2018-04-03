@@ -14,3 +14,114 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+// FONTS
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700i');
+
+// BODY
+.scroll-content { background: color($colors, light); }
+
+// SECTION 
+.landing {
+    width: 100%;
+    min-height: 350px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content-read {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.sponsors {
+    display: flex;
+    flex-direction: column;
+    width: 100;
+    align-items: center;
+    justify-content: center;
+}
+
+// TITLE
+h1 {
+    color: color($colors, dark);
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: color($colors, dark);
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 35px;
+    text-transform: uppercase;
+    margin: 0px;
+}
+
+.big-h2 {
+    font-size: 45px;
+}
+
+// BUTTON
+
+.cta {
+    font-size: 35px;
+    padding: 15px 50px;
+    color: white;
+    margin-top: 50px;
+    transform: skew(-20deg);
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    background: color($colors, secondary);
+}
+
+// TEXT
+
+.txt-shadow {
+    text-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.big-txt {
+    font-size: 30px;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    color: color($colors, dark);
+    text-align: center;
+    max-width: 560px;
+    width: 90%;
+    margin: 50px 0px !important;
+}
+
+.red-txt {
+    color: color($colors, secondary);
+}
+
+.descr {
+    width: 90%;
+    max-width: 560px;
+    font-size: 16px;
+    text-align: justify;
+}
+
+// OTHERS 
+.parallelogram {
+    width: 20px;
+    height: 50px;
+    background: color($colors, secondary);
+    transform: skew(-20deg);
+    position: relative;
+    display: block;
+    top: 55px;
+    left: -40px;
+}
+
+
+
+
+

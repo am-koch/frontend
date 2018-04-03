@@ -1,0 +1,64 @@
+page-about {
+    .sponsors {
+        display: flex;
+        flex-direction: column;
+        width: 100;
+        align-items: center;
+        justify-content: center;
+
+        .logo-sesf {
+            width: 80%;
+            max-width: 300px;
+            height: auto;
+        }
+
+        .team {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: center;
+            align-items: top;
+
+            .block-member {
+                display: flex;
+                flex-direction: column;
+                width: 80%;
+                max-width: 200px;
+                margin: 20px 10px;
+
+                .container-pic {
+                    height: 300px;
+                    width: 200px;
+                    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+
+                    img {
+                        height: 100%;
+                        width: 100%;
+                    }
+
+                    .profil {
+                        object-fit: cover;
+                        object-position: center;
+                    }
+                }
+
+                .name {
+                    color: color($colors, dark);
+                    font-family: 'Roboto Condensed', sans-serif;
+                    font-size: 20px;
+                    text-transform: uppercase;
+                    text-align: center;
+                    margin: 0px;
+                    margin-top: 15px;
+                }
+                .role {
+                    color: color($colors, dark);
+                    font-size: 16px;
+                    text-align: center;
+                    margin: 0px;
+                }
+            }
+        }
+    }
+}
