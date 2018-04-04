@@ -3,8 +3,12 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 import { MyApp } from './app.component';
+import { UserProvider } from '../providers/user/user';
+import { ApiProvider } from '../providers/api/api';
+
 
 @NgModule({
   declarations: [
@@ -12,6 +16,7 @@ import { MyApp } from './app.component';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     IonicModule.forRoot(MyApp, {
         locationStrategy: 'path'
     })
@@ -21,9 +26,13 @@ import { MyApp } from './app.component';
     MyApp
   ],
   providers: [
+    HttpClient,
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    UserProvider,
+    HttpClient,
+    ApiProvider
   ]
 })
 export class AppModule {}

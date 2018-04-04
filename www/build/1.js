@@ -1,15 +1,15 @@
 webpackJsonp([1],{
 
-/***/ 270:
+/***/ 280:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomePageModule", function() { return HomePageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SignupPageModule", function() { return SignupPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(98);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home__ = __webpack_require__(276);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_menu_menu_module__ = __webpack_require__(272);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(99);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__signup__ = __webpack_require__(287);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_menu_menu_module__ = __webpack_require__(282);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -20,34 +20,34 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var HomePageModule = /** @class */ (function () {
-    function HomePageModule() {
+var SignupPageModule = /** @class */ (function () {
+    function SignupPageModule() {
     }
-    HomePageModule = __decorate([
+    SignupPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__home__["a" /* HomePage */],
+                __WEBPACK_IMPORTED_MODULE_2__signup__["a" /* SignupPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__home__["a" /* HomePage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__signup__["a" /* SignupPage */]),
                 __WEBPACK_IMPORTED_MODULE_3__components_menu_menu_module__["a" /* MenuModule */]
             ],
         })
-    ], HomePageModule);
-    return HomePageModule;
+    ], SignupPageModule);
+    return SignupPageModule;
 }());
 
-//# sourceMappingURL=home.module.js.map
+//# sourceMappingURL=signup.module.js.map
 
 /***/ }),
 
-/***/ 272:
+/***/ 282:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MenuModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__menu__ = __webpack_require__(273);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__menu__ = __webpack_require__(283);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -73,13 +73,13 @@ var MenuModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 273:
+/***/ 283:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MenuComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(98);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(99);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -112,6 +112,9 @@ var MenuComponent = /** @class */ (function () {
     MenuComponent.prototype.toSwissGames = function () {
         this.navCtrl.push('SwissGamesPage');
     };
+    MenuComponent.prototype.toSignup = function () {
+        this.navCtrl.push('SignupPage');
+    };
     MenuComponent.prototype.openMenu = function () {
         for (var i = 0; i < this.nav_link_container.length; i++) {
             this.nav_link_container[i].style.left = '0px';
@@ -136,7 +139,7 @@ var MenuComponent = /** @class */ (function () {
     };
     MenuComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'menu',template:/*ion-inline-start:"/Users/sebastienmartin/Documents/SMGL/WEB/web-smgl/src/components/menu/menu.html"*/'<div class="container-sponsor">\n  <img src="assets/sponsors.png" alt="Logo of sponsors Bity, pro helvetia and swiss esports federation" class="sponsors-logo" />\n</div>\n\n<nav id="mobile-menu">\n  <div>\n    <img (click)="toHome()" src="assets/smgl_logo-ladder.svg" alt="Logo SMGL" class="logo mobile-logo" />\n  </div>\n  <div id="button-mobile-menu" (click)="openMenu()">\n    <div id="burger-menu"></div>\n  </div>\n  <div class="nav-link-container">\n    <div class="close-menu" (click)="animateCloseLink()"></div>\n    <p class="primary-link delayed-two" (click)="toAbout()">More about us</p>\n    <p class="primary-link delayed-two" (click)="toCompetition()">The competition</p>\n    <p class="primary-link delayed-three" (click)="toSwissGames()">Swiss Games</p>\n  </div>\n</nav>\n'/*ion-inline-end:"/Users/sebastienmartin/Documents/SMGL/WEB/web-smgl/src/components/menu/menu.html"*/
+            selector: 'menu',template:/*ion-inline-start:"/Users/sebastienmartin/Documents/SMGL/WEB/web-smgl/src/components/menu/menu.html"*/'<div class="container-sponsor">\n  <img src="assets/sponsors.png" alt="Logo of sponsors Bity, pro helvetia and swiss esports federation" class="sponsors-logo" />\n</div>\n\n<nav id="mobile-menu">\n  <div>\n    <img (click)="toHome()" src="assets/smgl_logo-ladder.svg" alt="Logo SMGL" class="logo mobile-logo" />\n  </div>\n  <div id="button-mobile-menu" (click)="openMenu()">\n    <div id="burger-menu"></div>\n  </div>\n  <div class="nav-link-container">\n    <div class="close-menu" (click)="animateCloseLink()"></div>\n    <p class="primary-link delayed-two" (click)="toAbout()">More about us</p>\n    <p class="primary-link delayed-two" (click)="toCompetition()">The competition</p>\n    <p class="primary-link delayed-three" (click)="toSwissGames()">Swiss Games</p>\n    <button class="signup" (click)="toSignup()">Sign Up</button>\n  </div>\n</nav>\n'/*ion-inline-end:"/Users/sebastienmartin/Documents/SMGL/WEB/web-smgl/src/components/menu/menu.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]])
     ], MenuComponent);
@@ -147,13 +150,14 @@ var MenuComponent = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 276:
+/***/ 287:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SignupPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(98);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(99);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_user_user__ = __webpack_require__(197);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -166,39 +170,119 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var HomePage = /** @class */ (function () {
-    function HomePage(navCtrl, alertCtrl, navParams) {
+var SignupPage = /** @class */ (function () {
+    function SignupPage(userProv, navCtrl, navParams) {
+        this.userProv = userProv;
         this.navCtrl = navCtrl;
-        this.alertCtrl = alertCtrl;
         this.navParams = navParams;
     }
-    HomePage.prototype.openPopup = function () {
-        var alert = this.alertCtrl.create({
-            title: 'SOON!',
-            message: 'Sign up will be soon available! Stay tuned to don\'t miss it!',
-            buttons: [
-                {
-                    text: 'Can\'t wait!',
-                    role: 'cancel',
-                    handler: function () {
-                        console.log('I\'ll kick somme ass!');
-                    }
-                }
-            ]
-        });
-        alert.present();
+    SignupPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad SignupPage');
     };
-    HomePage = __decorate([
+    SignupPage.prototype.signUp = function () {
+        if (!this.country) {
+            console.log(this.country, this.check);
+            this.check = false;
+            return;
+        }
+        if (!this.state) {
+            this.check = false;
+            return;
+        }
+        if (!this.postal_code) {
+            this.check = false;
+            return;
+        }
+        if (!this.locality) {
+            this.check = false;
+            return;
+        }
+        if (!this.street) {
+            this.check = false;
+            return;
+        }
+        if (!this.number) {
+            this.check = false;
+            return;
+        }
+        if (!this.gender) {
+            this.check = false;
+            return;
+        }
+        if (!this.birthdate) {
+            this.check = false;
+            return;
+        }
+        if (!this.mail) {
+            this.check = false;
+            return;
+        }
+        if (!this.firstname) {
+            this.check = false;
+            return;
+        }
+        if (!this.lastname) {
+            this.check = false;
+            return;
+        }
+        if (!this.firstname) {
+            this.check = false;
+            return;
+        }
+        if (!this.nickname) {
+            this.check = false;
+            return;
+        }
+        if (!this.password) {
+            this.check = false;
+            return;
+        }
+        if (!this.password_confirmation) {
+            this.check = false;
+            return;
+        }
+        if (this.password == this.password_confirmation) {
+            this.check = false;
+            return;
+        }
+        this.check = true;
+        var me = {
+            firstname: this.firstname,
+            lastname: this.lastname,
+            nickname: this.nickname,
+            password: this.password,
+            password_confirmation: this.password_confirmation,
+            mail: this.mail,
+            birthdate: this.birthdate,
+            gender: this.gender,
+            address: {
+                number: this.number,
+                street: this.street,
+                locality: {
+                    name: this.locality,
+                    postal_code: this.postal_code
+                },
+                state: {
+                    name: this.state
+                },
+                country: {
+                    name: this.country
+                }
+            }
+        };
+        this.userProv.setUser(me);
+    };
+    SignupPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"/Users/sebastienmartin/Documents/SMGL/WEB/web-smgl/src/pages/home/home.html"*/'<menu></menu>\n\n<ion-content>\n  <section class="landing home-landing">\n    <h1 style="color: white;" class="txt-shadow">Swiss Made</h1>\n    <img class="games-league" src="assets/games-league.svg" alt="GAMES LEAGUE">\n    <h2 class="specialH2 txt-shadow big-h2" style="color: white;">A Swiss tour</h2>\n    <h2 class="specialH2 txt-shadow big-h2" style="color: white;">on Swiss games</h2>\n\n    <div class="container-cta">\n      <img class="sun-burst" src="assets/sun-burst.svg" alt="sun burst">\n      <button class="cta" (click)="openPopup()">Sign up</button>\n    </div>\n  </section>\n\n  <section class="content-video">\n    \n    <iframe class="cta-video" src="https://www.youtube.com/embed/1cX0zk-mQgc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>\n\n  </section>\n\n  <section class="content-read">\n    <p class="big-txt">A new competition for <span class="red-txt">HARDCORE gamers</span>, <span class="red-txt">families</span> and happy <span class="red-txt">new players&nbsp;</span>!  </p>\n  </section>\n\n</ion-content>\n'/*ion-inline-end:"/Users/sebastienmartin/Documents/SMGL/WEB/web-smgl/src/pages/home/home.html"*/,
+            selector: 'page-signup',template:/*ion-inline-start:"/Users/sebastienmartin/Documents/SMGL/WEB/web-smgl/src/pages/signup/signup.html"*/'<menu></menu>\n\n<ion-content>\n    <div class="somethingWentWrong" *ngIf="!this.check">Something went wrong with the informations provided.</div>\n\n    <ion-input [(ngModel)]=\'lastname\' placeholder=\'Lastname\'></ion-input>\n    <ion-input [(ngModel)]=\'firstname\' placeholder=\'Firstname\'></ion-input>\n    <ion-input [(ngModel)]=\'nickname\' placeholder=\'Pseudo\'></ion-input>\n    <ion-input [(ngModel)]=\'mail\' placeholder=\'Email\'></ion-input>\n    <ion-input [(ngModel)]=\'password\' type=\'password\' placeholder=\'Password\'></ion-input>\n    <ion-input [(ngModel)]=\'password_confirmation\' type=\'password\' placeholder=\'Confirm password\'></ion-input>\n    <div class="available" *ngIf="password==password_confirmation">Passwords match</div>\n    <div class="notAvailable" *ngIf="password!=password_confirmation">Passwords don\'t match</div>\n    <ion-datetime displayFormat="DD/MM/YYYY" [(ngModel)]="birthdate"></ion-datetime>\n    <ion-select [(ngModel)]="gender">\n        <ion-option value="Female">Female</ion-option>\n        <ion-option value="Male">Male</ion-option>\n    </ion-select>   \n    <ion-input [(ngModel)]=\'street\' placeholder=\'Street\'></ion-input>\n    <ion-input [(ngModel)]=\'number\' placeholder=\'Street number\'></ion-input>\n    <ion-input [(ngModel)]=\'locality\' placeholder=\'City\'></ion-input>\n    <ion-input [(ngModel)]=\'postal_code\' placeholder=\'ZIP\'></ion-input>\n    <ion-input [(ngModel)]=\'state\' placeholder=\'State\'></ion-input>\n    <ion-input [(ngModel)]=\'country\' placeholder=\'Country\'></ion-input>\n\n    <button (click)="signUp()" ion-button color="light" class="signup">Sign up</button>\n</ion-content>\n'/*ion-inline-end:"/Users/sebastienmartin/Documents/SMGL/WEB/web-smgl/src/pages/signup/signup.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]) === "function" && _c || Object])
-    ], HomePage);
-    return HomePage;
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__providers_user_user__["a" /* UserProvider */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__providers_user_user__["a" /* UserProvider */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]) === "function" && _c || Object])
+    ], SignupPage);
+    return SignupPage;
     var _a, _b, _c;
 }());
 
-//# sourceMappingURL=home.js.map
+//# sourceMappingURL=signup.js.map
 
 /***/ })
 

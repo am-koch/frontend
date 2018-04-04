@@ -62,4 +62,22 @@ menu {
 
   .container-sponsor { position: fixed; top: 0px; left: 0px; width: 100%; display: flex; justify-content: center; z-index: 10; background: white; }
   .sponsors-logo { height: 28px; width: auto; }
+
+  .signup {
+    margin-top: 50px;
+    background: color($colors, secondary);
+    border: solid 3px white;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 10px 20px;
+    font-size: 30px;
+    width: 215px;
+    margin-left: 27vw;
+    transition: all 0.5s;
+  }
+  .signup:hover {
+    color: color($colors, secondary);
+    background: white;
+  }
 }

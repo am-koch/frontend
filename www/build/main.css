@@ -26142,6 +26142,26 @@ menu .sponsors-logo {
   width: auto;
 }
 
+menu .signup {
+  margin-top: 50px;
+  background: #DB2140;
+  border: solid 3px white;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Roboto Condensed', sans-serif;
+  padding: 10px 20px;
+  font-size: 30px;
+  width: 215px;
+  margin-left: 27vw;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+menu .signup:hover {
+  color: #DB2140;
+  background: white;
+}
+
 page-about .sponsors {
   display: -webkit-box;
   display: -webkit-flex;
@@ -26298,7 +26318,7 @@ page-home .content-video {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: -80px;
+  margin-top: -40px;
 }
 
 page-home .cta-video {

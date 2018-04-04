@@ -35,6 +35,9 @@ export class MenuComponent {
   toSwissGames() {
     this.navCtrl.push('SwissGamesPage');
   }
+  toSignup() {
+    this.navCtrl.push('SignupPage');
+  }
 
 
   openMenu() {

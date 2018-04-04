@@ -1,0 +1,27 @@
+<menu></menu>
+
+<ion-content>
+    <div class="somethingWentWrong" *ngIf="!this.check">Something went wrong with the informations provided.</div>
+
+    <ion-input [(ngModel)]='lastname' placeholder='Lastname'></ion-input>
+    <ion-input [(ngModel)]='firstname' placeholder='Firstname'></ion-input>
+    <ion-input [(ngModel)]='nickname' placeholder='Pseudo'></ion-input>
+    <ion-input [(ngModel)]='mail' placeholder='Email'></ion-input>
+    <ion-input [(ngModel)]='password' type='password' placeholder='Password'></ion-input>
+    <ion-input [(ngModel)]='password_confirmation' type='password' placeholder='Confirm password'></ion-input>
+    <div class="available" *ngIf="password==password_confirmation">Passwords match</div>
+    <div class="notAvailable" *ngIf="password!=password_confirmation">Passwords don't match</div>
+    <ion-datetime displayFormat="DD/MM/YYYY" [(ngModel)]="birthdate"></ion-datetime>
+    <ion-select [(ngModel)]="gender">
+        <ion-option value="Female">Female</ion-option>
+        <ion-option value="Male">Male</ion-option>
+    </ion-select>   
+    <ion-input [(ngModel)]='street' placeholder='Street'></ion-input>
+    <ion-input [(ngModel)]='number' placeholder='Street number'></ion-input>
+    <ion-input [(ngModel)]='locality' placeholder='City'></ion-input>
+    <ion-input [(ngModel)]='postal_code' placeholder='ZIP'></ion-input>
+    <ion-input [(ngModel)]='state' placeholder='State'></ion-input>
+    <ion-input [(ngModel)]='country' placeholder='Country'></ion-input>
+
+    <button (click)="signUp()" ion-button color="light" class="signup">Sign up</button>
+</ion-content>

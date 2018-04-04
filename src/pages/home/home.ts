@@ -18,6 +18,10 @@ export class HomePage {
     ) {
   }
 
+  openSignup() {
+    this.navCtrl.push('SignupPage');
+  }
+
   openPopup() {
       let alert = this.alertCtrl.create({
       title: 'SOON!',
