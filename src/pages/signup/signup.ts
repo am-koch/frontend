@@ -38,72 +38,102 @@ export class SignupPage {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad SignupPage');
+    this.check = true;
   }
 
   signUp() {
+    console.log('Enter')
     if(!this.country) {
-      console.log(this.country, this.check);
+      console.log(this.country, 'country');
       this.check = false;
       return
     }
     if(!this.state) {
+      console.log('state')
       this.check = false;
       return
     }
     if(!this.postal_code) {
+            console.log('state')
+
       this.check = false;
       return
     }
     if(!this.locality) {
+            console.log('state')
+
       this.check = false;
       return
     }
     if(!this.street) {
+            console.log('state')
+
       this.check = false;
       return
     }
     if(!this.number) {
+            console.log('state')
+
       this.check = false;
       return
     }
     if(!this.gender) {
+            console.log('state')
+
       this.check = false;
       return
     }
     if(!this.birthdate) {
+            console.log('state')
+
       this.check = false;
       return
     }
     if(!this.mail) {
+            console.log('state')
+
       this.check = false;
       return
     }
     if(!this.firstname) {
+            console.log('state')
+
       this.check = false;
       return
     }
     if(!this.lastname) {
+            console.log('state')
+
       this.check = false;
       return
     }
     if(!this.firstname) {
+            console.log('state')
+
       this.check = false;
       return
     }
     if(!this.nickname) {
+            console.log('state')
+
       this.check = false;
       return
     }
     if(!this.password) {
+            console.log('state')
+
       this.check = false;
       return
     }
     if(!this.password_confirmation) {
+            console.log('state')
+
       this.check = false;
       return
     }
-    if(this.password==this.password_confirmation){
+    if(this.password!=this.password_confirmation){
+            console.log('password not the same')
+
       this.check = false;
       return
     }

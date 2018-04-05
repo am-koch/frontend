@@ -25803,6 +25803,16 @@ h2 {
   text-align: justify;
 }
 
+.available {
+  margin-top: 10px;
+  color: #32db64;
+}
+
+.notAvailable {
+  margin-top: 10px;
+  color: orangered;
+}
+
 .parallelogram {
   width: 20px;
   height: 50px;
@@ -26427,6 +26437,77 @@ page-home .games-league {
   100% {
     -webkit-transform: scale(1, 1);
     transform: scale(1, 1);
+  }
+}
+
+page-signup .container-form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+
+page-signup ion-item {
+  padding: 0px !important;
+  width: 300px !important;
+  margin-top: 10px !important;
+}
+
+page-signup .signup {
+  padding: 15px 30px !important;
+  background: transparent;
+  height: auto !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  font-family: 'Roboto Condensed', sans-serif;
+  border-radius: 5px;
+  font-size: 20px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  border: solid 3px #DB2140;
+  color: #DB2140;
+  -webkit-transform: skew(-20deg);
+  transform: skew(-20deg);
+  -webkit-transition: all 0.3s !important;
+  transition: all 0.3s !important;
+}
+
+page-signup .signup:hover {
+  color: white;
+  background: #DB2140 !important;
+}
+
+@media screen and (min-width: 630px) {
+  page-signup .container-form {
+    width: 610px;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 }
 

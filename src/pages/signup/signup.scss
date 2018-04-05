@@ -1,3 +1,44 @@
 page-signup {
+    .container-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 400px;
+        margin: 0 auto;
+        margin-top: 150px;
+    }
+    ion-item {
+        padding: 0px!important;
+        width: 300px!important;
+        margin-top: 10px!important;
+    }
+    .signup {
+        padding: 15px 30px!important;
+        background: rgba(0,0,0,0);
+        height: auto!important;
+        box-shadow: none!important;
+        font-family: 'Roboto Condensed', sans-serif;
+        border-radius: 5px;
+        font-size: 20px;
+        margin-top: 50px;
+        margin-bottom: 100px;
+        border: solid 3px color($colors, secondary);
+        color: color($colors, secondary);
+        transform: skew(-20deg);
+        transition: all 0.3s!important;
+    }
+    .signup:hover {
+        color: white;
+        background: color($colors, secondary)!important;
+    }
 
+    @media screen and (min-width: 630px) {
+        .container-form {
+            width: 610px;
+            justify-content: space-between;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
 }

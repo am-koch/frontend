@@ -16,8 +16,12 @@ export class UserProvider {
   }
 
   setUser(data) {
+    console.log(data);
     this.me = User.build(data);
-    this.api.post('users', data);
+    console.log(this.me);
+    this.api.post('users', data).subscribe(res => {
+      console.log(res);
+    });
   } 
 
 }

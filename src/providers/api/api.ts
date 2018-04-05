@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 
 @Injectable()
 export class ApiProvider {
-  url: string = 'https://preprod.sgl.cyprx.cloud/';
+  url: string = 'https://preprod.sgl.cyprx.cloud';
 
   constructor(public http: HttpClient) {
   }
@@ -27,6 +27,7 @@ export class ApiProvider {
   }
 
   post(endpoint: string, body: any, reqOpts?: any) {
+    console.log(body);
     return this.http.post(this.url + '/' + endpoint, body, reqOpts);
   }
 
