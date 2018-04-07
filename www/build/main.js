@@ -34,11 +34,11 @@ var map = {
 		2
 	],
 	"../pages/signup/signup.module": [
-		280,
+		281,
 		1
 	],
 	"../pages/swiss-games/swiss-games.module": [
-		281,
+		280,
 		0
 	]
 };
@@ -224,8 +224,8 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/about/about.module#AboutPageModule', name: 'AboutPage', segment: 'about', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/competition/competition.module#CompetitionPageModule', name: 'CompetitionPage', segment: 'competition', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/home/home.module#HomePageModule', name: 'HomePage', segment: 'home', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/signup/signup.module#SignupPageModule', name: 'SignupPage', segment: 'signup', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/swiss-games/swiss-games.module#SwissGamesPageModule', name: 'SwissGamesPage', segment: 'swiss-games', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/swiss-games/swiss-games.module#SwissGamesPageModule', name: 'SwissGamesPage', segment: 'swiss-games', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/signup/signup.module#SignupPageModule', name: 'SignupPage', segment: 'signup', priority: 'low', defaultHistory: [] }
                     ]
                 })
             ],
